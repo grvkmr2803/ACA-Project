@@ -1,4 +1,4 @@
-// Shop.jsx
+
 import React, { useState } from 'react';
 import './Shop.css';
 import { useWishlist } from '../contexts/WishlistContext';

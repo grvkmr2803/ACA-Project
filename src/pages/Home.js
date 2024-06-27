@@ -1,5 +1,4 @@
-// Home.jsx
-// Home.jsx
+
 import React, { useContext, useState, useEffect } from 'react';
 import './Home.css';
 import { useWishlist } from '../contexts/WishlistContext';

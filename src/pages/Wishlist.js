@@ -1,4 +1,4 @@
-// WishlistPage.jsx
+
 import React from 'react';
 import { useWishlist } from '../contexts/WishlistContext';
 
