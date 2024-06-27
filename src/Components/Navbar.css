@@ -1,0 +1,34 @@
+.navbar{
+    background-color: black;
+   width: 60px;
+    height: 100vh;
+    position: fixed;
+    
+}
+.icons{
+    width: 100%;
+     padding-left: 8px;
+ 
+     padding-top: 40px;
+ }
+ 
+ 
+ .icon1{
+     padding-left: 3px;
+     height: 50px;
+    
+ }
+ .icon1 a i {
+     color: #f6f7f8;
+ }
+ .icon1 a:hover i {
+     color: rgb(218, 41, 71);
+ }
+ .icons2{
+     width: 100%;
+      padding-left: 8px;
+      position: absolute;
+     bottom: 30px; 
+     
+      
+  }
