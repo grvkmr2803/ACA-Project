@@ -22,28 +22,32 @@ const Home = () => {
             name: 'Macbook',
             price: '$1200',
             image: macbookImage,
-            brand: 'Apple'
+            brand: 'Brand: Apple',
+            quantity: 'Qauntity: 9'
         },
         {
             id: 2,
             name: 'DSLR',
             price: '$120',
             image: dslrImage,
-            brand: 'Canon'
+            brand: 'Brand: Canon',
+            quantity: 'Qauntity: 9'
         },
         {
             id: 3,
             name: 'iPad',
             price: '$324',
             image: ipadImage,
-            brand: 'Apple'
+            brand: 'Brand: Apple',
+            quantity: 'Qauntity: 9'
         },
         {
             id: 4,
             name: 'Sketchers',
             price: '$129',
             image: earpodsImage,
-            brand: 'Sketchers'
+            brand: 'Brand: Sketchers',
+            quantity: 'Qauntity: 9'
         }
     ];
 
@@ -104,8 +108,10 @@ const Home = () => {
                                     ></i>
                                 </div>
                                 <h3>{currentItem.name}</h3>
-                                <p>⭐⭐⭐⭐⭐</p>
                                 <p className="brand-name">{currentItem.brand}</p>
+                                <p>⭐⭐⭐⭐⭐</p>
+                                <p className="quantity">{currentItem.quantity}</p>
+                               
                                 <p className="price">{currentItem.price}</p>
                                 <a href="#" onClick={() => addToCart(currentItem)}>
                                     <i className="fa-solid fa-cart-shopping fa-lg"></i>
