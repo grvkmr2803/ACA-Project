@@ -139,18 +139,20 @@ const Home = () => {
                 <Route path="/cart" element={<CartPage />} />
             </Routes>
         </div>
-        <div className='content2'>
-            <div className='masti'>
-            <h2 style={{color:'rgb(240, 15, 188)'}}>Welcome to our e-commerce platform!<br/>
-            Explore a diverse selection of high-quality products and exclusive deals tailored to your needs. Enjoy a seamless shopping experience with us.
-            </h2>
-           
-           
-            </div>
-        </div>
+        <div className='content2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <div className='masti'>
+        <h2 style={{color:'rgb(240, 15, 188)', textAlign: 'center'}}>Welcome to our e-commerce platform!<br/>
+        <span style={{color: 'black'}}> Explore a diverse selection of high-quality products and exclusive deals tailored to your needs. Enjoy a seamless shopping experience with us.</span>
+        </h2>
+    </div>
+</div>
+
 
         <div className='content3'>
-            SPECIAL PRODUCTS
+           <div className='special'>
+            <div>SPECIAL PRODUCTS</div>
+            <div></div>
+           </div>
             <div className="left-content2">
                     {items.map((item, index) => (
                         <div className="image-boxes2" key={index}>
@@ -161,11 +163,12 @@ const Home = () => {
                                     onClick={() => addToWishlist(item)}
                                 ></i>
                             </div>
+                            <div className='ress'>
                             <h3>{item.name}</h3>
                             <p>⭐⭐⭐⭐⭐</p>
                             <p className="brand-name2">{item.brand}</p>
                             <p className="price2">{item.price}</p>
-                           
+                            </div>
                         </div>
                     ))}
                 </div>
