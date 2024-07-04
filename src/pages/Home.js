@@ -10,6 +10,7 @@ import macbookImage from '../images/616ee4216d106506511d79e00132fe0b.jpg';
 import dslrImage from '../images/Sigma-24mm-1.webp';
 import ipadImage from '../images/maxresdefault.jpg';
 import earpodsImage from '../images/OIP.jpeg';
+import { width } from '@fortawesome/free-regular-svg-icons/faAddressBook';
 
 const Home = () => {
     const { wishlist, addToWishlist, isInWishlist } = useWishlist();
@@ -31,7 +32,7 @@ const Home = () => {
             price: '$120',
             image: dslrImage,
             brand: 'Brand: Canon',
-            quantity: 'Qauntity: 9'
+            quantity: 'Qauntity: 20'
         },
         {
             id: 3,
@@ -39,7 +40,7 @@ const Home = () => {
             price: '$324',
             image: ipadImage,
             brand: 'Brand: Apple',
-            quantity: 'Qauntity: 9'
+            quantity: 'Qauntity: 69'
         },
         {
             id: 4,
@@ -47,7 +48,7 @@ const Home = () => {
             price: '$129',
             image: earpodsImage,
             brand: 'Brand: Sketchers',
-            quantity: 'Qauntity: 9'
+            quantity: 'Qauntity: 90'
         }
     ];
 
@@ -67,6 +68,7 @@ const Home = () => {
     const currentItem = items[currentIndex];
 
     return (
+        <div className='peter'>
         <div className="content">
             <div className='r11'>
                 <div className="left-content">
@@ -84,7 +86,7 @@ const Home = () => {
                             <p className="brand-name">{item.brand}</p>
                             <p className="price">{item.price}</p>
                             <a href="#" onClick={() => addToCart(item)}>
-                                <i className="fa-solid fa-cart-shopping fa-lg"></i>
+                                <i className="fa-solid fa-cart-shopping " style={{color: '#787878'}}></i>
                             </a>
                         </div>
                     ))}
@@ -99,27 +101,33 @@ const Home = () => {
                     </div>
                     <div className='anu4'>
                         <div className="right-content">
-                            <div className="image-boxes">
-                                <div className="image-container">
-                                    <img src={currentItem.image} alt={currentItem.name} />
-                                    <i
-                                        className={`fa-${isInWishlist(currentItem) ? 'solid' : 'regular'} fa-heart heart-icon`}
-                                        onClick={() => addToWishlist(currentItem)}
-                                    ></i>
+                           
+                                <div className="image-container2">
+                                    
+                                    <img src={currentItem.image} alt={currentItem.name} style={{width: '100%',height:'100%'}}/>
+                                   
+                                   
                                 </div>
-                                <h3>{currentItem.name}</h3>
+                                <div className='g1'>
+                                    <div className='g2'> 
+                                    <h3>{currentItem.name}</h3>
+                                          <p className="price">{currentItem.price}</p>
+                                </div>
+                               <div className='g4'>
                                 <p className="brand-name">{currentItem.brand}</p>
                                 <p>⭐⭐⭐⭐⭐</p>
                                 <p className="quantity">{currentItem.quantity}</p>
                                
-                                <p className="price">{currentItem.price}</p>
+                               
                                 <a href="#" onClick={() => addToCart(currentItem)}>
-                                    <i className="fa-solid fa-cart-shopping fa-lg"></i>
+                                    <i className="fa-solid fa-cart-shopping " style={{color: '#787878'}}></i>
                                 </a>
-                            </div>
+                                </div>
+                                </div>
+                           
                         </div>
                     </div>
-                    <div className='anu2'>
+                    <div className='anu3'>
                         <div className="right-arrow" onClick={nextItem}>
                             <i className="fa-solid fa-circle-right fa-lg" style={{ cursor: 'pointer' }}></i>
                         </div>
@@ -130,6 +138,39 @@ const Home = () => {
                 <Route path="/wishlist" element={<WishlistPage />} />
                 <Route path="/cart" element={<CartPage />} />
             </Routes>
+        </div>
+        <div className='content2'>
+            <div className='masti'>
+            <h2 style={{color:'rgb(240, 15, 188)'}}>Welcome to our e-commerce platform!<br/>
+            Explore a diverse selection of high-quality products and exclusive deals tailored to your needs. Enjoy a seamless shopping experience with us.
+            </h2>
+           
+           
+            </div>
+        </div>
+
+        <div className='content3'>
+            SPECIAL PRODUCTS
+            <div className="left-content2">
+                    {items.map((item, index) => (
+                        <div className="image-boxes2" key={index}>
+                            <div className="image-container2">
+                                <img src={item.image} alt={item.name} />
+                                <i
+                                    className={`fa-${isInWishlist(item) ? 'solid' : 'regular'} fa-heart heart-icon`}
+                                    onClick={() => addToWishlist(item)}
+                                ></i>
+                            </div>
+                            <h3>{item.name}</h3>
+                            <p>⭐⭐⭐⭐⭐</p>
+                            <p className="brand-name2">{item.brand}</p>
+                            <p className="price2">{item.price}</p>
+                           
+                        </div>
+                    ))}
+                </div>
+
+        </div>
         </div>
     );
 };
