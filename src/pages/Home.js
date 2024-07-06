@@ -23,7 +23,7 @@ const Home = () => {
             name: 'Macbook',
             price: '$1200',
             image: macbookImage,
-            brand: 'Brand: Apple',
+            brand: 'Apple',
             quantity: 'Qauntity: 9'
         },
         {
@@ -31,7 +31,7 @@ const Home = () => {
             name: 'DSLR',
             price: '$120',
             image: dslrImage,
-            brand: 'Brand: Canon',
+            brand: 'Canon',
             quantity: 'Qauntity: 20'
         },
         {
@@ -39,7 +39,7 @@ const Home = () => {
             name: 'iPad',
             price: '$324',
             image: ipadImage,
-            brand: 'Brand: Apple',
+            brand: 'Apple',
             quantity: 'Qauntity: 69'
         },
         {
@@ -47,7 +47,7 @@ const Home = () => {
             name: 'Sketchers',
             price: '$129',
             image: earpodsImage,
-            brand: 'Brand: Sketchers',
+            brand: 'Sketchers',
             quantity: 'Qauntity: 90'
         }
     ];
@@ -102,7 +102,7 @@ const Home = () => {
                     <div className='anu4'>
                         <div className="right-content">
                            
-                                <div className="image-container2">
+                                <div className="image-container3">
                                     
                                     <img src={currentItem.image} alt={currentItem.name} style={{width: '100%',height:'100%'}}/>
                                    
@@ -114,7 +114,7 @@ const Home = () => {
                                           <p className="price">{currentItem.price}</p>
                                 </div>
                                <div className='g4'>
-                                <p className="brand-name">{currentItem.brand}</p>
+                                <p className="brand-name">Brand: {currentItem.brand}</p>
                                 <p>⭐⭐⭐⭐⭐</p>
                                 <p className="quantity">{currentItem.quantity}</p>
                                
@@ -150,7 +150,7 @@ const Home = () => {
 
         <div className='content3'>
            <div className='special'>
-            <div>SPECIAL PRODUCTS</div>
+            <div style={{fontSize:'40px'}}>SPECIAL PRODUCTS</div>
             <div></div>
            </div>
             <div className="left-content2">
@@ -164,10 +164,22 @@ const Home = () => {
                                 ></i>
                             </div>
                             <div className='ress'>
-                            <h3>{item.name}</h3>
-                            <p>⭐⭐⭐⭐⭐</p>
-                            <p className="brand-name2">{item.brand}</p>
-                            <p className="price2">{item.price}</p>
+                               
+                                <div className='chassu1'>  
+                                    <p className="brand-name2">{item.brand}</p>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                    <a href="#" onClick={() => addToCart(item)}>
+                               Add to cart
+                            </a>
+                                </div>
+                                <div className='chassu2'>
+                                    <h3>{item.name}</h3>
+                                    </div>
+                                <div className='chassu3'> <p className="price2">{item.price}</p></div>
+                           
+                          
+                           
+                           
                             </div>
                         </div>
                     ))}

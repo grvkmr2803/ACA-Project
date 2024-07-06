@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './Shop.css';
 import { useWishlist } from '../contexts/WishlistContext';
 import { useCart } from '../contexts/CartContext';
+import macbookImage from '../images/mac.jpeg';
 
 const Shop = () => {
     const { wishlist, addToWishlist } = useWishlist();
@@ -16,7 +17,7 @@ const Shop = () => {
             id: 1,
             name: 'Macbook Pro',
             price: '$100.07',
-            image: '../mac.webp',
+            image: macbookImage,
             brand: 'Apple',
             category: 'Laptops',
         },
@@ -24,7 +25,7 @@ const Shop = () => {
             id: 2,
             name: 'Dell Inspiron touch',
             price: '$50.07',
-            image: '../dell.avif',
+            image: '../dell.jpeg',
             brand: 'Dell',
             category: 'Laptops',
         },
@@ -32,8 +33,80 @@ const Shop = () => {
             id: 3,
             name: 'iPhone 12',
             price: '$999.99',
-            image: '../iphone12.jpg',
+            image: '../iphone12.jpeg',
             brand: 'Apple',
+            category: 'Phone',
+        },
+        {
+            id: 4,
+            name: 'Jeans',
+            price: '$15',
+            image: '../jeans.jpg',
+            brand: 'Killer',
+            category: 'Clothes',
+        },
+        {
+            id: 5,
+            name: 'shoes',
+            price: '$99',
+            image: '../shoes.jpg',
+            brand: 'Woodland',
+            category: 'Clothes',
+        },
+        {
+            id: 6,
+            name: 'drone',
+            price: '$500',
+            image: '../drone.jpg',
+            brand: 'Tesla',
+            category: 'Drones',
+        },
+        {
+            id: 7,
+            name: 'Camera',
+            price: '$123',
+            image: '../camera.jpg',
+            brand: 'Nikon',
+            category: 'Cameras',
+        },
+        {
+            id: 8,
+            name: 'Airpod',
+            price: '$70.99',
+            image: '../airpod.jpg',
+            brand: 'Apple',
+            category: 'Earpods',
+        },
+        {
+            id: 9,
+            name: 'casual shirt',
+            price: '$20.99',
+            image: '../shirt.jpg',
+            brand: 'RareRabbit',
+            category: 'Clothes',
+        },
+        {
+            id: 10,
+            name: 'Galaxy S7',
+            price: '$199.99',
+            image: '../s7.jpg',
+            brand: 'Samsung',
+            category: 'Tablets',
+        },
+        {
+            id: 11,
+            name: 'samsung s24',
+            price: '$199',
+            image: '../s24.jpg',
+            brand: 'Samsung',
+            category: 'Phone',
+        },
+        {
+            id: 12,
+            name: 'samsung s23',
+            price: '$159',
+            image: '../s23.jpg',
+            brand: 'Samsung',
             category: 'Phone',
         }
     ];
@@ -192,9 +265,9 @@ const Shop = () => {
                                 <input
                                     type="checkbox"
                                     name="brand"
-                                    value="Option 4"
+                                    value="RareRabbit"
                                     onChange={handleBrandChange}
-                                /> Option 4
+                                /> RareRabbit
                             </label>
                         </div>
                         <div className="f2">
@@ -202,9 +275,9 @@ const Shop = () => {
                                 <input
                                     type="checkbox"
                                     name="brand"
-                                    value="Option 5"
+                                    value="Tesla"
                                     onChange={handleBrandChange}
-                                /> Option 5
+                                /> Tesla
                             </label>
                         </div>
                     </div>
