@@ -162,7 +162,7 @@
 }
 .image-container {
     position: relative;
-    display: inline-block;
+   
    
    
 }
@@ -187,7 +187,7 @@
     
 }
 .anu4{
-    width: 90%;
+    width: 100%;
 }
 .right-content{
     width: 100%;
@@ -204,9 +204,7 @@
     justify-content: space-between;
     width: 100%;
 }
-.g3{
-   
-}
+
 
 .image-container2 img{
     border-radius: 7px;
@@ -236,6 +234,16 @@ margin-left: 20px;
 .g4{
     margin-right: 60px;
 }
+.g4 a{
+    background-color: aliceblue;
+    width: 140px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+   border-radius: 12px;
+}
 .content2{
    
     height: 100px;
@@ -255,11 +263,7 @@ margin-left: 20px;
     margin-left: 100px;
     margin-right: 40px;
 }
-.masti h3,p {
-    margin: 0;
-    padding: 0;
-   
-}
+
 .peter{
     height: 100vh;
 }
@@ -291,24 +295,19 @@ margin-left: 20px;
      
 }
 
-.left-content2 div h3, p{
-    text-align: center;
-    color: white;
-    
 
-}
 .left-content2 div .price2{
     float: right;
     width: 80px;
-    color: white;
-    background-color: #DB2777;
-    border-radius: 8px;
-     margin: 10px 20px 6px 20px ;
+    color: rgb(155, 91, 150);
+    background-color: #e2ccd6;
+    border-radius: 17px;
+    margin-top: 35px;
      padding: 5PX;
 
 }
 .left-content2 div .brand-name2{
-    width: 100px;
+    
     float: left;
     padding: 5px;
     margin: 10px 10px 6px 0px ;
@@ -321,12 +320,17 @@ margin-left: 20px;
 
 .left-content2 div a{         
    
-    width: 75px;
-    height: 22px;
-   
+    width: 100px;
+    height: 32px;
+    
     color: aliceblue;
     background-color: #DB2777;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    
     
 }
 
@@ -391,4 +395,13 @@ margin-left: 20px;
     justify-content: space-around;
     height: 30%;
     width: 100%;
+}
+.chassu1 a{
+    margin-top: 13px;
+}
+.chassu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
 }

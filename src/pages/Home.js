@@ -61,7 +61,7 @@ const Home = () => {
     };
 
     useEffect(() => {
-        const interval = setInterval(nextItem, 4000); // Change item every 4 seconds
+        const interval = setInterval(nextItem, 4000); 
         return () => clearInterval(interval);
     }, []);
 
@@ -166,8 +166,8 @@ const Home = () => {
                             <div className='ress'>
                                
                                 <div className='chassu1'>  
-                                    <p className="brand-name2">{item.brand}</p>
-                                    <p>⭐⭐⭐⭐⭐</p>
+                                    <p className="brand-name2" >{item.brand}</p>
+                                    <p style={{fontSize:'13px'}}> ⭐⭐⭐⭐⭐</p>
                                     <a href="#" onClick={() => addToCart(item)}>
                                Add to cart
                             </a>
