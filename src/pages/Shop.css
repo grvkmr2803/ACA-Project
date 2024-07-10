@@ -150,6 +150,7 @@ body {
 .info {
     padding: 10px;
     width: 50%;
+    
 }
 
 .info h6 {
@@ -179,8 +180,7 @@ body {
 
 .info2 {
     display: flex;
-   justify-content: flex-start;
-    align-items: center;
+   
     padding: 10px;
     background-color: #202938;
     flex-direction: column;
@@ -208,6 +208,10 @@ body {
 }
 .d1{
     display: flex;
+   height: 50%;
+   align-items: flex-end;
+   justify-content: space-around;
+ 
    
   
   
